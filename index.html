@@ -13,9 +13,15 @@
             padding: 10px;
             border-radius: 10px;
             color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 10px 0;
-            cursor: pointer; /* Add pointer cursor to indicate clickability */
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Add transition effect */
+        }
+
+        .PICK-3:hover, .LOTTO-2D:hover, .LOTTO-3D:hover {
+            transform: translateY(-5px); /* Move up slightly on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
         }
 
         .PICK-3::before, .LOTTO-2D::before, .LOTTO-3D::before {
@@ -25,7 +31,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             z-index: 1;
         }
@@ -73,7 +79,13 @@
 </header>
 <main>
     <h2>Hi! I am Admin Arnel</h2>
-    <a href="https://m.me/j/AbaqqI51Sf4j2ToG/" class="play-now">Join Now!</a>
+
+    <!-- First Join Now Button for 2D & 3D GC -->
+    <a href="https://m.me/j/AbaqqI51Sf4j2ToG/" class="play-now">Join Now in 2D & 3D GC</a>
+
+    <!-- Second Join Now Button for PICK 3 GC -->
+    <a href="https://m.me/j/AbaqqI51Sf4j2ToG/" class="play-now">Join Now in PICK 3 GC</a>
+
     <p style="font-size: 1em; text-align: center; margin-top: 10px; font-weight: bold;">
         PINDUTIN LANG ANG PICTURE SA IBABA PARA SA MECHANICS
     </p>
@@ -86,6 +98,8 @@
             <p>Pumili lang nang (3) Tatlong Numero mula 1-55 kung 6/55 ang draw</p>
             <p>Kapag lumabas ang tatlong numero mo sa PCSO live draw, PANALO KA NA AGAD!</p>
             <p>Kapag dalawa lang ang lumabas sa numero mo, balik taya ka (exclusive for 50 pesos pataas na taya)</p>
+
+            <img src="https://raw.githubusercontent.com/phonlinelottohub/agent-arnel/main/P3.png" alt="PICK 3 PRIZES" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
         </div>
     </section>
 
@@ -100,6 +114,8 @@
             <p>01 15 100 S</p>
             <p>01 15 100 R</p>
             <p>15 15 100 P</p>
+
+            <img src="https://raw.githubusercontent.com/phonlinelottohub/agent-arnel/main/2D.png" alt="2D PRIZES" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
         </div>
     </section>
 
@@ -114,6 +130,8 @@
             <p>1 2 3 100 S</p>
             <p>1 2 3 100 R</p>
             <p>7 7 7 100 T</p>
+
+            <img src="https://raw.githubusercontent.com/phonlinelottohub/agent-arnel/main/3D.png" alt="3D PRIZES" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
         </div>
     </section>
 
@@ -131,9 +149,4 @@
 
 <script>
     function toggleMechanics(id) {
-        const mechanics = document.getElementById(id);
-        mechanics.style.display = mechanics.style.display === 'block' ? 'none' : 'block';
-    }
-</script>
-</body>
-</html>
+        const mechanics = document.getElementById
